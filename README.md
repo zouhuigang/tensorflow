@@ -46,6 +46,12 @@
 	docker run -it -p 8888:8888 -p 6006:6006 -v ~/tensorflow:/notebooks/data --name tf registry.cn-hangzhou.aliyuncs.com/zhg_docker_ali_r/tensorflow 
 
 
+### python3版本的tensorflow
+
+	docker pull registry.cn-hangzhou.aliyuncs.com/zhg_docker_ali_r/tensorflow:latest-py3
+	docker run -it -p 8888:8888 -p 6006:6006 -v ~/tensorflow:/notebooks/data --name tf registry.cn-hangzhou.aliyuncs.com/zhg_docker_ali_r/tensorflow:latest-py3
+
+
 之后在/notebooks/data目录下的文件会被保存在服务器上
 
 ![2](./images/20171207134841.png)
